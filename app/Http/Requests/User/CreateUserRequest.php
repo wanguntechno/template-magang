@@ -15,7 +15,7 @@ class CreateUserRequest extends FormRequest
      */
     public function authorize()
     {
-        return have_permission('user_create');
+        return ('');
     }
     
     protected function failedAuthorization()

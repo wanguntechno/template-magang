@@ -242,36 +242,36 @@ return [
                 'item_category_view',
             ],
             'submenu' => [
-                [
-                    'text' => 'Role',
-                    'url'  => '/role',
-                    'icon' => 'fas fa-user-tag',
-                    'module_key' => 'role_view',
-                ],
-                [
-                    'text' => 'User',
-                    'url'  => '/user',
-                    'icon' => 'fas fa-fw fa-user',
-                    'module_key' => 'user_view',
-                ],
-                [
-                    'text' => 'Area',
-                    'url'  => '/area',
-                    'icon' => 'fas fa-map-marked-alt',
-                    'module_key' => 'area_view',
-                ],
-                [
-                    'text' => 'Tenant',
-                    'url'  => '/tenant',
-                    'icon' => 'fas fa-store',
-                    'module_key' => 'tenant_view',
-                ],
-                [
-                    'text' => 'Item Category',
-                    'url'  => '/item-category',
-                    'icon' => 'fas fa-th-list',
-                    'module_key' => 'item_category_view',
-                ],
+                // [
+                //     'text' => 'Role',
+                //     'url'  => '/role',
+                //     'icon' => 'fas fa-user-tag',
+                //     'module_key' => 'role_view',
+                // ],
+                // [
+                //     'text' => 'User',
+                //     'url'  => '/user',
+                //     'icon' => 'fas fa-fw fa-user',
+                //     'module_key' => 'user_view',
+                // ],
+                // [
+                //     'text' => 'Area',
+                //     'url'  => '/area',
+                //     'icon' => 'fas fa-map-marked-alt',
+                //     'module_key' => 'area_view',
+                // ],
+                // [
+                //     'text' => 'Tenant',
+                //     'url'  => '/tenant',
+                //     'icon' => 'fas fa-store',
+                //     'module_key' => 'tenant_view',
+                // ],
+                // [
+                //     'text' => 'Item Category',
+                //     'url'  => '/item-category',
+                //     'icon' => 'fas fa-th-list',
+                //     'module_key' => 'item_category_view',
+                // ],
             ],
         ],
         [

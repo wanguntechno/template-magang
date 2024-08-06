@@ -15,7 +15,7 @@ class StoreUserRequest extends FormRequest
      */
     public function authorize()
     {
-        return have_permission('user_create');
+        return ('');
     }
     
     protected function failedAuthorization()
@@ -31,18 +31,14 @@ class StoreUserRequest extends FormRequest
     public function rules()
     {
         return [
-            'user_username' => ['required','min:2'],
-            'user_password' => ['required_with:password_confirmation','confirmed'],
-            'user_role_uuid' => ['required', new ExistsUuid('roles')],
+            // 'user_password' => ['required_with:password_confirmation','confirmed'],
         ];
     }
 
     public function messages()
     {
         return [
-            'user_username.required' => 'Username harus diisi',
             'user_password.required' => 'Password harus diisi',
-            'user_role_uuid.required' => 'Role harus dipilih',
         ];
     }
 }

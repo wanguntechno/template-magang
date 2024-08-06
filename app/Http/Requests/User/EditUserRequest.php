@@ -15,7 +15,7 @@ class EditUserRequest extends FormRequest
      */
     public function authorize()
     {
-        return have_permission('user_edit');
+        return ('');
     }
     
     protected function failedAuthorization()

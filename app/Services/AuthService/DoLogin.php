@@ -17,15 +17,7 @@ class DoLogin extends DefaultService implements ServiceInterface {
         }
         $user = User::find(auth()->id());
 
-        $this->results['data'] = [
-            'user' => [
-                'user_uuid' => $user->uuid,
-                'user_name' => $user->name,
-                'role_uuid' => $user->userRole->role->uuid,
-                'role_name' => $user->userRole->role->name,
-            ],
-            'token' => $user->createToken('MyApp')->accessToken
-        ];
+        
         $this->results['message'] = "User successfully logged in";
 
     }

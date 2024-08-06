@@ -14,7 +14,7 @@ class DeleteUserRequest extends FormRequest
      */
     public function authorize()
     {
-        return have_permission('user_delete');
+        return ('');
     }
 
     protected function failedAuthorization()

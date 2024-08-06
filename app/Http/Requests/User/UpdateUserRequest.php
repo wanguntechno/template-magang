@@ -16,7 +16,7 @@ class UpdateUserRequest extends FormRequest
      */
     public function authorize()
     {
-        return have_permission('user_edit');
+        return ('');
     }
     
     protected function failedAuthorization()
@@ -33,16 +33,12 @@ class UpdateUserRequest extends FormRequest
     {
         // $user_uuid = request()->route()->parameter('user');
         return [
-            'user_username' => ['required','min:2'],
-            'user_role_uuid' => ['required', new ExistsUuid('roles')],
         ];
     }
 
     public function messages()
     {
         return [
-            'user_username.required' => 'Username harus diisi',
-            'user_role_uuid.required' => 'Role harus dipilih',
         ];
     }
 }

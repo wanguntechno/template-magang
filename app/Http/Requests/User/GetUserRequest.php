@@ -17,7 +17,7 @@ class GetUserRequest extends FormRequest
      */
     public function authorize()
     {
-        return have_permission('user_view');
+        return ('');
     }
 
     protected function failedAuthorization()
